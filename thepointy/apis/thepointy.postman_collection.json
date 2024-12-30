@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "48510e3f-4057-4d17-b17e-2c64aed90b9d",
+		"name": "thepointy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36947625"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sonu Verma\",\r\n    \"email\":\"sonu.verma@gmail.com\",\r\n    \"password\":\"Sonu@123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sonu Verma\",\r\n    \"email\":\"sonu.verma@gmail.com\",\r\n    \"password\":\"Sonu@123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-LmZtBeB8ue1Q9CQjAP0vl2sue0M\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 10:54:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User register successfully\",\n    \"data\": {\n        \"id\": \"6767f003dfe1c53c1b813088\",\n        \"email\": \"sonu.verma@gmail.com\",\n        \"name\": \"Sonu Verma\",\n        \"createdAt\": \"2024-12-22T10:54:59.668Z\",\n        \"updatedAt\": \"2024-12-22T10:54:59.668Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sonu.verma@gmail.com\",\r\n    \"password\":\"Sonu@123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sonu.verma@gmail.com\",\r\n    \"password\":\"Sonu@123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "376"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"178-5OT8nvtQXXpeqJ4ewlEny3Z2ICY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 07:01:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User login successfully\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbnUudmVybWFAZ21haWwuY29tIiwiaWQiOiI2NzY3Yjc5NTFmZDFkNzg5NmNiZjdhMWQiLCJpYXQiOjE3MzQ4NTA5MDgsImV4cCI6MTczNDkzNzMwOH0.aLBO7D_zerL43O1XFtKSubfFa115m6HOTWYWJKc5j7M\",\n        \"user\": {\n            \"id\": \"6767b7951fd1d7896cbf7a1d\",\n            \"email\": \"sonu.verma@gmail.com\",\n            \"name\": \"Sonu Verma\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbnUudmVybWFAZ21haWwuY29tIiwiaWQiOiI2NzY3ZjAwM2RmZTFjNTNjMWI4MTMwODgiLCJpYXQiOjE3MzQ4NjUwOTUsImV4cCI6MTczNDk1MTQ5NX0.KF1BTnWpgap9aDsgi_6D7ojxyDf5s6n9ssLuWlYmCHo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Tablet\",\r\n    \"description\":\"Sumsang tablet\",\r\n    \"price\":55000,\r\n    \"stock\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Tablet\",\r\n    \"description\":\"Sumsang tablet\",\r\n    \"price\":55000,\r\n    \"stock\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-wOGJvjuDBTTqHfg7EB197WV0F3g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 10:58:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product created successfully\",\n    \"data\": {\n        \"id\": \"6767f0f1aa7da747ad6c4a9b\",\n        \"name\": \"Tablet\",\n        \"description\": \"Sumsang tablet\",\n        \"price\": 55000,\n        \"stock\": 3,\n        \"createdAt\": \"2024-12-22T10:58:57.085Z\",\n        \"updatedAt\": \"2024-12-22T10:58:57.085Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "all product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbnUudmVybWFAZ21haWwuY29tIiwiaWQiOiI2NzY3ZjAwM2RmZTFjNTNjMWI4MTMwODgiLCJpYXQiOjE3MzQ4NjUwOTUsImV4cCI6MTczNDk1MTQ5NX0.KF1BTnWpgap9aDsgi_6D7ojxyDf5s6n9ssLuWlYmCHo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/product/all?search=tablet&limit=2&skip=0&minPrice=20000&maxPrice=300000&minStock=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"all"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "tablet"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "minPrice",
+							"value": "20000"
+						},
+						{
+							"key": "maxPrice",
+							"value": "300000"
+						},
+						{
+							"key": "minStock",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "all product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/product/all?search=tablet&limit=2&skip=0&minPrice=20000&maxPrice=300000&minStock=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"all"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "tablet"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "minPrice",
+									"value": "20000"
+								},
+								{
+									"key": "maxPrice",
+									"value": "300000"
+								},
+								{
+									"key": "minStock",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "374"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"176-j8EDCs73FqdFivR3M+XlqnzgKaw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 11:27:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"search\": \"tablet\",\n    \"limit\": 2,\n    \"skip\": 0,\n    \"minPrice\": 20000,\n    \"maxPrice\": 300000,\n    \"minStock\": 1,\n    \"page\": 1,\n    \"total\": 1,\n    \"data\": [\n        {\n            \"_id\": \"6767f122aa7da747ad6c4aa1\",\n            \"name\": \"Tablet\",\n            \"description\": \"Sumsang tablet\",\n            \"price\": 55000,\n            \"stock\": 7,\n            \"isDeleted\": false,\n            \"createdAt\": \"2024-12-22T10:59:46.406Z\",\n            \"updatedAt\": \"2024-12-22T11:09:55.265Z\"\n        }\n    ],\n    \"message\": \"Products fetched successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbnUudmVybWFAZ21haWwuY29tIiwiaWQiOiI2NzY3ZjAwM2RmZTFjNTNjMWI4MTMwODgiLCJpYXQiOjE3MzQ4NjUwOTUsImV4cCI6MTczNDk1MTQ5NX0.KF1BTnWpgap9aDsgi_6D7ojxyDf5s6n9ssLuWlYmCHo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/product/delete/6767f122aa7da747ad6c4aa1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"delete",
+						"6767f122aa7da747ad6c4aa1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/product/delete/6767f122aa7da747ad6c4aa1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"delete",
+								"6767f122aa7da747ad6c4aa1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "264"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"108-mlpIv8r7t5KFYCKjqrnEDQlyess\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 11:02:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product deleted successfully\",\n    \"data\": {\n        \"id\": \"6767f122aa7da747ad6c4aa1\",\n        \"name\": \"Tablet\",\n        \"description\": \"Sumsang tablet\",\n        \"price\": 55000,\n        \"stock\": 3,\n        \"createdAt\": \"2024-12-22T10:59:46.406Z\",\n        \"updatedAt\": \"2024-12-22T11:02:02.507Z\",\n        \"isDeleted\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbnUudmVybWFAZ21haWwuY29tIiwiaWQiOiI2NzY3ZjAwM2RmZTFjNTNjMWI4MTMwODgiLCJpYXQiOjE3MzQ4NjUwOTUsImV4cCI6MTczNDk1MTQ5NX0.KF1BTnWpgap9aDsgi_6D7ojxyDf5s6n9ssLuWlYmCHo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tablet\",\r\n    \"description\": \"Sumsang tablet\",\r\n    \"price\": 55000,\r\n    \"stock\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/update/6767f122aa7da747ad6c4aa1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"update",
+						"6767f122aa7da747ad6c4aa1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tablet\",\r\n    \"description\": \"Sumsang tablet\",\r\n    \"price\": 55000,\r\n    \"stock\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/product/update/6767f122aa7da747ad6c4aa1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"update",
+								"6767f122aa7da747ad6c4aa1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-/NVNW+a1KPloLI+4l2AMbsMgM10\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 11:09:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product updated successfully\",\n    \"data\": {\n        \"id\": \"6767f122aa7da747ad6c4aa1\",\n        \"name\": \"Tablet\",\n        \"description\": \"Sumsang tablet\",\n        \"price\": 55000,\n        \"stock\": 7,\n        \"createdAt\": \"2024-12-22T10:59:46.406Z\",\n        \"updatedAt\": \"2024-12-22T11:09:55.265Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
